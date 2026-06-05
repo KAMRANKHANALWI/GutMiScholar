@@ -1,0 +1,32 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+
+    container_name: gutmischolar-backend
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - ./backend/.env
+
+    volumes:
+      - ./backend/data:/app/data
+
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+
+    container_name: gutmischolar-frontend
+
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped
