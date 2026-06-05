@@ -137,12 +137,12 @@ The evaluation workflow supports:
 - Error analysis and score distribution reports
 - Local LLM-based evaluation through Ollama
 
-See:
+Learn more:
 
-- `docs/EVALUATION.md`
-- `docs/EVAL_DATASET.md`
-- `docs/EVAL_PIPELINE.md`
-- `docs/EVAL_RESULTS.md`
+- [Evaluation Methodology](docs/EVALUATION.md)
+- [Benchmark Dataset](docs/EVAL_DATASET.md)
+- [Evaluation Pipeline](docs/EVAL_PIPELINE.md)
+- [Evaluation Results](docs/EVAL_RESULTS.md)
 
 ---
 
@@ -152,12 +152,12 @@ Detailed documentation is available in the `docs/` directory.
 
 | Document | Description |
 |-----------|-------------|
-| `docs/ARCHITECTURE.md` | System architecture, retrieval workflows, service design, and deployment architecture |
-| `docs/API.md` | REST API reference, request/response formats, and endpoint documentation |
-| `docs/EVALUATION.md` | Evaluation methodology, RAGAS metrics, and benchmark design |
-| `docs/EVAL_DATASET.md` | Dataset generation workflow and benchmark structure |
-| `docs/EVAL_PIPELINE.md` | End-to-end evaluation pipeline and reproduction guide |
-| `docs/EVAL_RESULTS.md` | Benchmark results, RAGAS scores, and evaluation analysis |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture, retrieval workflows, service design, and deployment architecture |
+| [API.md](docs/API.md) | REST API reference, request/response formats, and endpoint documentation |
+| [EVALUATION.md](docs/EVALUATION.md) | Evaluation methodology, RAGAS metrics, and benchmark design |
+| [EVAL_DATASET.md](docs/EVAL_DATASET.md) | Dataset generation workflow and benchmark structure |
+| [EVAL_PIPELINE.md](docs/EVAL_PIPELINE.md) | End-to-end evaluation pipeline and reproduction guide |
+| [EVAL_RESULTS.md](docs/EVAL_RESULTS.md) | Benchmark results, RAGAS scores, and evaluation analysis |
 
 ---
 
