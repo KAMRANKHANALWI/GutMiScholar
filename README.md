@@ -15,6 +15,7 @@ GutMiScholar enables researchers to interact with collections of scientific PDFs
 * Features
 * Retrieval Modes
 * Architecture
+* Evaluation
 * Documentation
 * Technology Stack
 * Supported LLM Providers
@@ -124,12 +125,39 @@ GutMiScholar combines query classification, collection-aware retrieval, configur
 
 ---
 
+## Evaluation
+
+GutMiScholar includes a reproducible evaluation pipeline built using RAGAS and a curated benchmark derived from gut microbiome research papers.
+
+The evaluation workflow supports:
+
+- MCQ-based accuracy evaluation
+- Open-ended answer evaluation with RAGAS
+- Retrieval quality analysis
+- Error analysis and score distribution reports
+- Local LLM-based evaluation through Ollama
+
+See:
+
+- `docs/EVALUATION.md`
+- `docs/EVAL_DATASET.md`
+- `docs/EVAL_PIPELINE.md`
+- `docs/EVAL_RESULTS.md`
+
+---
+
 ## Documentation
 
-For implementation details and API references, see:
+Detailed documentation is available in the `docs/` directory.
 
-* **[System Architecture](docs/Architecture.md)** — Architecture overview, ingestion pipeline, retrieval workflow, reranking, memory, and deployment design.
-* **[API Reference](docs/API.md)** — Available endpoints, request and response formats, streaming events, and error handling.
+| Document | Description |
+|-----------|-------------|
+| `docs/ARCHITECTURE.md` | System architecture, retrieval workflows, service design, and deployment architecture |
+| `docs/API.md` | REST API reference, request/response formats, and endpoint documentation |
+| `docs/EVALUATION.md` | Evaluation methodology, RAGAS metrics, and benchmark design |
+| `docs/EVAL_DATASET.md` | Dataset generation workflow and benchmark structure |
+| `docs/EVAL_PIPELINE.md` | End-to-end evaluation pipeline and reproduction guide |
+| `docs/EVAL_RESULTS.md` | Benchmark results, RAGAS scores, and evaluation analysis |
 
 ---
 
@@ -199,6 +227,9 @@ GOOGLE_API_KEY=your_key
 
 GROQ_MODEL=llama-3.1-8b-instant
 RERANKER_API_PROVIDER=gemini
+
+USE_LOCAL_LLM=true
+OLLAMA_MODEL=llama3.1:latest
 ```
 
 Start the backend:
