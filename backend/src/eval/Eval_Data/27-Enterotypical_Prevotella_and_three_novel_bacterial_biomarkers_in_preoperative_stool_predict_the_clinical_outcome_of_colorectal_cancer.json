@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Enterotypical Prevotella and three novel bacterial biomarkers in preoperative stool predict the clinical outcome of colorectal cancer",
+    "authors": ["Ji-Won Huh", "Min Jung Kim", "Jaesik Kim", "Hyeon Gwon Lee", "Seung-Bum Ryoo", "Ja-Lok Ku", "Seung-Yong Jeong", "Kyu Joo Park", "Dokyoon Kim", "Jihyun F. Kim", "Ji Won Park"],
+    "journal": "Microbiome",
+    "year": 2022,
+    "doi": "10.1186/s40168-022-01388-8",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "CRC_MICRO_easy_001",
+      "difficulty": "easy",
+      "question": "What are the two major enterotypes of the human gut microbiota, and how are they characterized?",
+      "answer": "The two major enterotypes of the human gut microbiota are enterotype 1, which is dominated by the genus Bacteroides, and enterotype 2, which is dominated by the genus Prevotella. These two representative genera show a reciprocal distribution pattern — when one is abundant, the other tends to be low. Enterotypes reflect long-term dietary habits and can be influenced by lifestyle factors, with Prevotella-dominant enterotype 2 being more common in non-Western populations consuming plant-rich, fiber-heavy diets, while Bacteroides-dominant enterotype 1 is associated with Western dietary patterns including greater processed meat consumption.",
+      "topic_tags": ["enterotypes", "Prevotella", "Bacteroides", "gut microbiota", "diet"]
+    },
+    {
+      "id": "CRC_MICRO_easy_002",
+      "difficulty": "easy",
+      "question": "What is the prognostic significance of Prevotella abundance in colorectal cancer patients?",
+      "answer": "High abundance of Prevotella in preoperative stool samples is significantly associated with better clinical outcomes in colorectal cancer patients. Patients with higher Prevotella abundance demonstrate lower risks of cancer progression and death after surgical treatment. This makes Prevotella a favorable prognostic biomarker — its protective association is consistent with its enrichment in populations consuming high-fiber, plant-based diets, which are also associated with reduced colorectal cancer risk and improved survival.",
+      "topic_tags": ["Prevotella", "colorectal cancer prognosis", "progression-free survival", "gut microbiota biomarker"]
+    },
+    {
+      "id": "CRC_MICRO_easy_003",
+      "difficulty": "easy",
+      "question": "Which bacterial species are associated with poor prognosis in colorectal cancer, and what do several of them have in common in terms of body site origin?",
+      "answer": "Four bacterial species are associated with poor prognosis in colorectal cancer: Fusobacterium nucleatum, Dialister invisus, Pyramidobacter piscolens, and Alistipes species (assigned to Bacteroides sp. by standard databases). A notable feature of three of these — F. nucleatum, D. invisus, and P. piscolens — is that they are all members of the oral microbiota. F. nucleatum and D. invisus are found in dental plaques and are known to induce periodontal inflammation, while P. piscolens was first isolated from the human oral cavity and is associated with oral dysbiosis. This suggests that ectopic translocation of oral bacteria to the gut may play a role in adverse CRC outcomes.",
+      "topic_tags": ["pathobionts", "Fusobacterium nucleatum", "Dialister invisus", "Pyramidobacter piscolens", "oral microbiota", "colorectal cancer"]
+    },
+    {
+      "id": "CRC_MICRO_easy_004",
+      "difficulty": "easy",
+      "question": "What is a microbial hazard score, and what is its purpose in the context of cancer prognosis?",
+      "answer": "A microbial hazard score (MHS) is a composite risk index derived from the presence and abundance of prognostically relevant gut bacteria. Its purpose is to quantify a patient's risk of cancer progression or death based on the preoperative gut microbiota composition. By combining protective bacteria (such as high Prevotella abundance, which scores 0) with detrimental pathobionts (each detected species contributing a score of 1), the MHS produces a numerical risk stratification. This allows clinicians to identify high-, moderate-, and low-risk patients in a non-invasive manner using stool samples, potentially complementing or outperforming existing clinical biomarkers such as carcinoembryonic antigen or lymphatic invasion status.",
+      "topic_tags": ["microbial hazard score", "risk stratification", "colorectal cancer prognosis", "biomarker", "gut microbiota"]
+    },
+    {
+      "id": "CRC_MICRO_easy_005",
+      "difficulty": "easy",
+      "question": "How does the 16S ribosomal RNA gene sequencing approach enable characterization of the gut microbiota without culturing bacteria?",
+      "answer": "16S rRNA gene sequencing exploits highly conserved yet variable regions of the 16S ribosomal RNA gene present in all bacteria. By PCR-amplifying specific hypervariable regions (such as the V3-V4 regions) from genomic DNA extracted directly from fecal samples, researchers can catalog the diversity and relative abundance of microbial taxa without needing to grow organisms in culture. Sequencing reads are processed through bioinformatics pipelines such as QIIME2, which uses denoising algorithms like DADA2 to generate amplicon sequence variants (ASVs), and these are classified against curated reference databases such as SILVA. This culture-independent approach allows detection of fastidious anaerobes that cannot survive standard laboratory culture conditions.",
+      "topic_tags": ["16S rRNA sequencing", "gut microbiota profiling", "QIIME2", "amplicon sequencing", "culture-independent methods"]
+    },
+
+    {
+      "id": "CRC_MICRO_medium_001",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota enterotype of colorectal cancer patients relate to clinical stage, systemic inflammation markers, and overall prognosis?",
+      "answer": "In colorectal cancer patients, the Bacteroides-dominant enterotype 1 is associated with more adverse clinical characteristics compared to the Prevotella-dominant enterotype 2. Enterotype 1 patients show a higher proportion of advanced cancer stage and greater likelihood of disease progression, as well as significantly elevated systemic inflammation and tumor markers, including higher levels of serum carcinoembryonic antigen (CEA) and plasma fibrinogen. Enterotype 1 is also associated with shorter progression-free and overall survival, though the survival differences reach varying levels of statistical significance. These patterns suggest that the Bacteroides-dominant microbial ecosystem co-occurs with a more pro-tumorigenic host physiological state, reflecting convergent influences of diet, lifestyle, metabolic health, and microbial composition on cancer outcomes.",
+      "topic_tags": ["enterotype", "colorectal cancer staging", "CEA", "fibrinogen", "prognosis", "Bacteroides", "Prevotella"]
+    },
+    {
+      "id": "CRC_MICRO_medium_002",
+      "difficulty": "medium",
+      "question": "What microbial metabolic pathways are inferred to be beneficial versus detrimental in colorectal cancer prognosis, and what are the proposed mechanisms?",
+      "answer": "Using PICRUSt2 functional inference, several microbial metabolic pathways were differentially abundant between low-risk and high-risk colorectal cancer patients. Beneficial pathways enriched in low-risk patients include thiamine diphosphate salvage and biosynthesis, flavin biosynthesis, preQ0 biosynthesis, and lipid biosynthesis pathways (dodecenoate, stearate, oleate, and palmitoleate biosynthesis). The thiamine pathway is notable because low dietary thiamine intake is associated with increased CRC risk, and high-dose thiamine suppresses cancer cell proliferation. In contrast, detrimental pathways enriched in high-risk patients include glycolysis, glycogen degradation, pyrimidine deoxyribonucleoside salvage, and critically, L-histidine degradation. The histidine degradation pathway is significant because metastatic CRC patients have low circulating histidine, and high expression of histidine catabolic enzymes in tumor tissue correlates with poor survival. Both the thiamine and histidine pathways also correlated with the number of CD8+ cytotoxic T cells in the tumor epithelium, suggesting immunomodulatory roles.",
+      "topic_tags": ["PICRUSt2", "microbial metabolism", "thiamine", "histidine degradation", "colorectal cancer", "tumor immunity", "CD8 T cells"]
+    },
+    {
+      "id": "CRC_MICRO_medium_003",
+      "difficulty": "medium",
+      "question": "How does the genus Alistipes relate to colorectal cancer prognosis, and why is its taxonomic classification in microbiome studies potentially problematic?",
+      "answer": "Alistipes species, specifically A. dispar and A. senegalensis, are associated with poor colorectal cancer outcomes and serve as independent biomarkers for worse prognosis. Alistipes is a relatively recently defined genus that branched off from Bacteroides, and this evolutionary proximity creates a taxonomic ambiguity: standard microbiome databases such as SILVA 138 may assign Alistipes amplicon sequence variants to the genus Bacteroides sp. rather than Alistipes. This misclassification is consequential because it means that the prognostic signal attributed to 'Bacteroides sp.' in CRC studies may actually reflect Alistipes species. In broader disease contexts, Alistipes has been reported in both protective and pathogenic roles, and in CRC specifically it is increased in carcinoma tissues compared to healthy controls. The case illustrates a general challenge in microbiome research: taxonomic databases lag behind the discovery of new genera, potentially leading to misattributed biological signals.",
+      "topic_tags": ["Alistipes", "Bacteroides", "taxonomic classification", "colorectal cancer prognosis", "SILVA database", "microbiome methodology"]
+    },
+    {
+      "id": "CRC_MICRO_medium_004",
+      "difficulty": "medium",
+      "question": "What are the practical advantages of using preoperative stool-based microbiota profiling as a prognostic tool compared to tissue biopsies or blood biomarkers?",
+      "answer": "Preoperative stool-based microbiota profiling offers several practical advantages over tissue and blood-based approaches. First, fecal samples can be collected non-invasively by patients at home without medical assistance, reducing the technical and logistical burden. This is particularly advantageous for longitudinal postoperative monitoring, where repeated sampling is needed. Second, the gut microbiota-based hazard score utilizes an absence/presence scale for the detrimental bacteria, which allows qualitative detection via standard PCR without requiring quantitative abundance measurements — making it simpler and more widely deployable. Third, the microbial hazard score has been shown to outperform established clinical biomarkers such as carcinoembryonic antigen and lymphatic invasion after adjustment for tumor stage, and it provides independent prognostic information that improves prediction accuracy when combined with existing indicators. Compared to liquid biopsies (circulating tumor DNA) or tissue biopsies, fecal collection is risk-free, painless, and lower cost.",
+      "topic_tags": ["stool biomarker", "non-invasive diagnostics", "colorectal cancer prognosis", "PCR detection", "longitudinal monitoring"]
+    },
+    {
+      "id": "CRC_MICRO_medium_005",
+      "difficulty": "medium",
+      "question": "How does the relationship between diet, Prevotella abundance, and colorectal cancer prognosis suggest a potential modifiable pathway for improving patient outcomes?",
+      "answer": "The relationship between diet, Prevotella, and CRC prognosis represents a potentially modifiable axis for improving outcomes. Prevotella is enriched in the gut of non-Western populations who consume diets rich in vegetables and fiber and low in processed meat, while Bacteroides predominates in Western dietary patterns. Enterotype can be altered through appropriate dietary intervention, indicating it is not fixed. Higher fiber intake after CRC diagnosis has been independently associated with reduced mortality. Together, these findings suggest that dietary interventions promoting Prevotella enrichment — such as increased fiber and plant-based food consumption — could shift the gut microbiota toward a more favorable prognostic state. This positions gut microbiota modulation as an adjunct therapeutic strategy in CRC management, complementing surgical and chemotherapeutic approaches.",
+      "topic_tags": ["diet", "Prevotella", "fiber intake", "colorectal cancer survival", "enterotype modulation", "lifestyle intervention"]
+    },
+    {
+      "id": "CRC_MICRO_medium_006",
+      "difficulty": "medium",
+      "question": "What statistical approaches are used to validate microbial prognostic biomarkers and reduce the risk of spurious findings in gut microbiome-cancer studies?",
+      "answer": "To minimize false discoveries in microbiota-based CRC prognosis research, several complementary statistical strategies can be employed. Monte Carlo cross-validation involves repeatedly subsampling the data (e.g., 1000 times with a 70/30 discovery/validation split), and biomarkers are considered robust only when they consistently discriminate outcomes in both discovery and validation sets. Multivariate Cox proportional hazard regression adjusts for major confounders such as TNM stages, lymphatic invasion, neoadjuvant treatment, postoperative chemotherapy, and CEA levels, ensuring that identified bacteria provide prognostic information independent of established clinical variables. The Benjamini-Hochberg false discovery rate (FDR) correction is applied to log-rank test p-values to control for multiple comparisons across many bacterial taxa. Biomarkers are further required to exceed thresholds for both effect size (hazard ratio > 1.5) and significance (FDR < 0.1). Bootstrapping with concordance index (C-index) calculation assesses predictive performance and stability. Together, these approaches increase confidence that identified biomarkers are genuine and reproducible.",
+      "topic_tags": ["cross-validation", "Cox regression", "FDR correction", "bootstrapping", "biomarker validation", "microbiome statistics"]
+    },
+
+    {
+      "id": "CRC_MICRO_hard_001",
+      "difficulty": "hard",
+      "question": "How does a microbiota-derived composite hazard score compare to traditional single clinical biomarkers in predicting colorectal cancer progression, and what does this imply about the biological complexity underlying cancer outcomes?",
+      "answer": "A microbiota-derived composite hazard score integrating multiple prognostic bacteria substantially outperforms individual clinical biomarkers in predicting colorectal cancer progression. When added to a baseline model based on clinicopathological cancer stage alone, the composite microbial score improves the concordance index more than any single alternative biomarker including CEA, age, fibrinogen, or lymphatic invasion. Notably, the predictive gain from the microbial score is comparable to the combined contribution of CEA, lymphatic invasion, and age together. Furthermore, the microbial score continues to independently enhance predictive power even when these indicators are already included in the model, demonstrating non-redundant prognostic information. This finding implies that the gut microbiota captures aspects of the tumor-host-microbial ecosystem — including immune modulation, metabolic programming, and pathobiont-driven inflammation — that are not reflected in standard clinical measurements. The superiority of the composite over individual microbial features (e.g., Prevotella abundance alone vs. the five-bacteria score) also underscores that multiple microbial signals operate through distinct mechanisms and that combining them produces additive or synergistic prognostic power. This points to cancer outcomes being driven by a complex ecology rather than any single bacterial species.",
+      "topic_tags": ["microbial hazard score", "concordance index", "CEA", "lymphatic invasion", "cancer prognosis", "multi-biomarker model", "tumor microenvironment"]
+    },
+    {
+      "id": "CRC_MICRO_hard_002",
+      "difficulty": "hard",
+      "question": "What is the significance of the co-occurrence of oral-origin pathobionts in colorectal cancer stool, and how might this reflect systemic dysbiosis beyond the gut?",
+      "answer": "The identification of multiple oral-origin bacteria — including Fusobacterium nucleatum, Dialister invisus, and Pyramidobacter piscolens — as significant prognostic indicators in colorectal cancer stool raises important questions about the relationship between the oral microbiome, gut microbiome, and cancer progression. Under healthy conditions, oral bacteria are largely prevented from colonizing the intestinal tract by a combination of gastric acid, bile, and competitive exclusion by the resident gut microbiota. The ectopic colonization of oral bacteria in the intestine has been shown to drive pro-inflammatory T-helper cell responses and chronic inflammation. The enrichment of these oral-origin pathobionts in patients with adverse CRC outcomes suggests that they may either directly promote tumor progression — F. nucleatum is well-established as an oncobiont that activates oncogenic signaling pathways and modulates the tumor immune microenvironment — or that their presence is a marker of a more permissive intestinal niche resulting from disrupted epithelial barriers and immune surveillance. The co-occurrence of periodontal inflammation-inducing species further implies that systemic dysbiosis, spanning both oral and gut compartments, may be a broader feature of the adverse CRC microenvironment, potentially pointing to oral health as a modifiable contributing factor in cancer management.",
+      "topic_tags": ["oral microbiota", "Fusobacterium nucleatum", "ectopic colonization", "systemic dysbiosis", "periodontal disease", "colorectal cancer", "tumor immunity"]
+    },
+    {
+      "id": "CRC_MICRO_hard_003",
+      "difficulty": "hard",
+      "question": "How do inferred microbial metabolic pathways in colorectal cancer connect to host immune responses, and what are the limitations of using computational functional inference in this context?",
+      "answer": "PICRUSt2-based functional inference in colorectal cancer patients reveals potential immunomodulatory connections between microbial metabolism and host immunity. The thiamine diphosphate salvage pathway, enriched in low-risk patients, positively correlates (Spearman's ρ = 0.12) with CD8+ cytotoxic T cell density in the tumor epithelium, while the L-histidine degradation pathway, enriched in high-risk patients, inversely correlates (ρ = −0.15, P = 0.022) with CD8+ T cell counts. Since cytotoxic T cell infiltration is a key determinant of anti-tumor immunity, these correlations suggest that a microbiota favoring thiamine production supports a more immunologically active tumor microenvironment, while one promoting histidine catabolism may deplete a substrate needed for immune effector function. However, substantial caveats apply: PICRUSt2 predicts functional capacity from 16S rRNA taxonomic profiles by inferring gene content from related reference genomes, but this approach assumes functional equivalence across strains and does not measure actual gene expression, protein activity, or metabolite levels. Taxonomic composition does not always reflect true functional output due to horizontal gene transfer, strain-level variation, and post-transcriptional regulation. Therefore, these inferences must be treated as hypothesis-generating and require experimental validation, such as metabolomics, metatranscriptomics, or germ-free animal models, before mechanistic conclusions can be drawn.",
+      "topic_tags": ["PICRUSt2", "functional inference", "CD8 T cells", "thiamine", "histidine", "tumor microenvironment", "methodological limitations"]
+    },
+    {
+      "id": "CRC_MICRO_hard_004",
+      "difficulty": "hard",
+      "question": "What are the conceptual and methodological challenges in translating gut microbiota-based prognostic biomarkers from a single-institution cohort to broader clinical application across different populations?",
+      "answer": "Translating gut microbiota-based prognostic biomarkers to broad clinical practice involves multiple interrelated challenges. First, gut microbiota composition is profoundly influenced by geography, diet, ethnicity, and lifestyle, creating substantial inter-population variability. A dichotomization threshold for Prevotella abundance (e.g., ~16% relative abundance as the median split) may not be appropriate or generalizable in Western populations, where Prevotella prevalence and baseline abundance are lower due to different dietary patterns. Second, single-institution study designs introduce selection bias and lack external validation, making it unclear whether biomarker performance will hold in diverse healthcare settings or patient populations. Third, 16S rRNA gene sequencing involves numerous methodological choices — amplified variable regions, reference databases, rarefaction depth, and clustering algorithms — that affect the precise taxa identified and their relative abundances, potentially limiting cross-study reproducibility. Fourth, the Alistipes/Bacteroides sp. misclassification issue demonstrates how database limitations can obscure true biological signals, and such problems compound over time as taxonomic knowledge evolves. Fifth, the transition from research sequencing to clinical deployment requires simplified, cost-effective platforms such as targeted PCR panels for key species, but PCR-based detection has lower resolution than sequencing. Addressing these challenges requires multi-center validation studies across diverse ethnic and geographic populations, standardized protocols, and prospective rather than retrospective study designs.",
+      "topic_tags": ["clinical translation", "population variability", "external validation", "methodology standardization", "microbiome biomarker", "colorectal cancer"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "CRC_MICRO_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which enterotype of the human gut microbiota is associated with a plant-rich, high-fiber diet and is more prevalent in non-Western populations?",
+      "options": {
+        "A": "Enterotype 1, characterized by Bacteroides dominance",
+        "B": "Enterotype 2, characterized by Prevotella dominance",
+        "C": "Enterotype 3, characterized by Ruminococcus dominance",
+        "D": "Enterotype 2, characterized by Fusobacterium dominance"
+      },
+      "correct_answer": "B",
+      "explanation": "Enterotype 2 is characterized by Prevotella dominance and is enriched in individuals consuming diets rich in vegetables and fiber with less processed meat — a pattern more common in non-Western populations. Enterotype 1 is Bacteroides-dominant and associated with Western dietary patterns.",
+      "topic_tags": ["enterotype", "Prevotella", "diet", "gut microbiota"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What type of biological sample is used to profile the gut microbiota in preoperative colorectal cancer patients, and what is its primary practical advantage?",
+      "options": {
+        "A": "Mucosal biopsy, because it directly reflects the tumor microenvironment",
+        "B": "Blood sample, because circulating bacterial DNA is highly stable",
+        "C": "Fecal sample, because it can be collected non-invasively at home without medical assistance",
+        "D": "Lymph node aspirate, because it captures systemic dissemination of gut bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Fecal samples can be collected by patients at home without technical assistance, making them ideal for non-invasive and repeated sampling. This is a compelling advantage over tissue biopsies or blood draws for longitudinal postoperative monitoring.",
+      "topic_tags": ["fecal sampling", "non-invasive biomarker", "clinical utility"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "In gut microbiome research, what does 'dysbiosis' refer to in the context of colorectal cancer?",
+      "options": {
+        "A": "An increase in overall microbial diversity beyond the normal range",
+        "B": "The complete absence of bacteria from the gastrointestinal tract",
+        "C": "An altered microbial composition characterized by increased opportunistic pathobionts and disrupted host-microbial symbiosis",
+        "D": "A uniform distribution of all bacterial phyla across the colon"
+      },
+      "correct_answer": "C",
+      "explanation": "Dysbiosis refers to the disruption of normal host-microbial symbiosis, typically featuring an increased presence of opportunistic pathobionts and reduced beneficial commensals. In colorectal cancer, patients show such dysbiosis, including elevated Fusobacterium nucleatum and other pathogenic species.",
+      "topic_tags": ["dysbiosis", "colorectal cancer", "gut microbiota", "pathobionts"]
+    },
+
+    {
+      "id": "CRC_MICRO_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How is the microbial hazard score (M5) constructed, and what scoring logic does it use for its component bacteria?",
+      "options": {
+        "A": "All five bacteria are assigned a score of 1 if detected and 0 if absent, and the sum predicts risk",
+        "B": "Low Prevotella abundance contributes a score of 1; detection of each of four pathobionts also contributes 1, so high scores indicate greater risk",
+        "C": "The score uses continuous relative abundance values for all five bacteria combined in a weighted regression model",
+        "D": "High Prevotella abundance contributes a score of 1 as a protective factor, and all pathobionts contribute negative scores"
+      },
+      "correct_answer": "B",
+      "explanation": "In the M5 scoring system, low Prevotella abundance (below the median threshold) is assigned a score of 1, reflecting absence of the protective genus. Each of the four detrimental pathobionts (Bacteroides sp./Alistipes, P. piscolens, D. invisus, F. nucleatum) contributes a score of 1 if detected. Higher total scores therefore indicate greater risk of progression.",
+      "topic_tags": ["microbial hazard score", "M5", "scoring method", "Prevotella", "pathobionts"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is the functional inference tool PICRUSt2 used for in gut microbiome studies, and what is a key limitation of its outputs?",
+      "options": {
+        "A": "It directly sequences all functional genes in the microbiome and provides exact enzyme activity measurements",
+        "B": "It predicts metagenomic functional capacity from 16S rRNA taxonomic profiles by inferring gene content from reference genomes, but cannot confirm actual gene expression or metabolite production",
+        "C": "It measures metabolite concentrations in stool samples through mass spectrometry and links them to taxonomic composition",
+        "D": "It performs metatranscriptomic profiling of active microbial pathways from RNA extracted from feces"
+      },
+      "correct_answer": "B",
+      "explanation": "PICRUSt2 is a computational tool that predicts metagenomic functional capacity based on 16S rRNA gene-derived taxonomic profiles, using known gene content of reference genomes to infer what metabolic pathways may be present. A key limitation is that taxonomic composition does not always reflect true functional capacity — actual gene expression, enzyme activity, and metabolite levels require direct experimental measurement.",
+      "topic_tags": ["PICRUSt2", "functional inference", "metagenome", "methodological limitations"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why are three of the detrimental bacterial biomarkers for colorectal cancer progression — Fusobacterium nucleatum, Dialister invisus, and Pyramidobacter piscolens — particularly notable from a microbiome ecology perspective?",
+      "options": {
+        "A": "All three are strict anaerobes uniquely adapted to the colonic environment and are never found in healthy individuals",
+        "B": "All three are members of the oral microbiota normally found in dental plaque, suggesting that oral-to-gut bacterial translocation may contribute to adverse CRC outcomes",
+        "C": "All three produce short-chain fatty acids that directly promote tumor cell proliferation in the colon",
+        "D": "All three are members of the Firmicutes phylum and reflect a global shift in the Firmicutes-to-Bacteroidetes ratio"
+      },
+      "correct_answer": "B",
+      "explanation": "F. nucleatum, D. invisus, and P. piscolens are all members of the oral microbiota commonly found in dental plaques or the oral cavity. Their presence in the gut of high-risk CRC patients suggests that ectopic translocation of oral bacteria to the gastrointestinal tract — which can occur when barrier function or immune surveillance is compromised — may be a feature of adverse colorectal cancer outcomes.",
+      "topic_tags": ["oral microbiota", "Fusobacterium nucleatum", "Dialister invisus", "Pyramidobacter piscolens", "colorectal cancer", "bacterial translocation"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does microbial Shannon diversity index differ between colorectal cancer patients with favorable versus unfavorable outcomes, and between enterotypes?",
+      "options": {
+        "A": "Shannon diversity is significantly lower in patients who progress and is also lower in Prevotella-dominant enterotype 2",
+        "B": "Shannon diversity is significantly higher in enterotype 2 compared to enterotype 1, but does not significantly differ between patients based on cancer stage or postoperative outcome",
+        "C": "Shannon diversity is significantly higher in patients who progress and is highest in advanced-stage CRC",
+        "D": "Shannon diversity is comparable across both enterotypes but is significantly elevated in patients with metastatic disease"
+      },
+      "correct_answer": "B",
+      "explanation": "Shannon diversity index is significantly higher in Prevotella-dominant enterotype 2 compared to Bacteroides-dominant enterotype 1. However, it does not significantly differ between cancer stages or between patients based on whether they experienced progression or death after surgery. This indicates that overall diversity alone is not a reliable prognostic indicator, and that specific taxa or functional profiles matter more than aggregate diversity.",
+      "topic_tags": ["Shannon diversity", "enterotype", "colorectal cancer staging", "alpha diversity", "microbiome"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the proposed link between microbial thiamine (vitamin B1) metabolism and colorectal cancer prognosis?",
+      "options": {
+        "A": "Microbial production of excess thiamine promotes colonic epithelial proliferation, accelerating cancer progression",
+        "B": "Thiamine biosynthesis and salvage pathways are enriched in low-risk patients; low thiamine is associated with increased cancer risk and high doses suppress cancer cell proliferation, suggesting that microbiota-derived thiamine may be a beneficial factor",
+        "C": "Thiamine degradation by the microbiota is a marker of a healthy gut and correlates with reduced cancer incidence",
+        "D": "Thiamine pathway activity suppresses CD8+ T cell infiltration into the tumor, providing a direct immune mechanism for poor prognosis"
+      },
+      "correct_answer": "B",
+      "explanation": "Thiamine biosynthesis and diphosphate salvage pathways are computationally inferred to be enriched in low-risk CRC patients. Supporting evidence indicates that low dietary thiamine intake is associated with increased CRC risk, while high-dose thiamine suppresses cancer cell proliferation in vitro. The correlation of thiamine pathway activity with CD8+ T cell density further suggests a potential immunomodulatory role for microbial thiamine production.",
+      "topic_tags": ["thiamine", "vitamin B1", "microbial metabolism", "colorectal cancer prognosis", "PICRUSt2"]
+    },
+
+    {
+      "id": "CRC_MICRO_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "When comparing a microbiota-derived composite score to individual clinical biomarkers for predicting colorectal cancer progression, which statement best characterizes the incremental predictive value and what does this imply methodologically?",
+      "options": {
+        "A": "The composite microbiota score provides equivalent predictive value to cancer stage alone, suggesting that microbiota profiling may replace standard staging in the future",
+        "B": "The composite microbiota score adds more predictive power on top of cancer stage than CEA, lymphatic invasion, or age individually, and its gain is comparable to combining all three of those biomarkers simultaneously, suggesting it captures non-redundant multi-pathway biological information",
+        "C": "The composite microbiota score only improves prediction marginally in early-stage cancers but performs equivalently to CEA in advanced-stage disease",
+        "D": "The predictive value of the composite microbiota score is entirely explained by its correlation with cancer stage, indicating no independent prognostic contribution"
+      },
+      "correct_answer": "B",
+      "explanation": "The M5 composite microbiota score, when added to a stage-based baseline model, produces a concordance index improvement comparable to the combined effect of adding CEA, lymphatic invasion, and age together. Furthermore, M5 continues to independently improve prediction even when all three of those other indicators are already in the model, confirming it captures non-redundant biological information not reflected in standard clinical measurements.",
+      "topic_tags": ["concordance index", "prognostic biomarker", "microbial hazard score", "CEA", "lymphatic invasion", "predictive modeling"]
+    },
+    {
+      "id": "CRC_MICRO_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "The L-histidine degradation pathway is enriched in high-risk colorectal cancer patients and inversely correlates with cytotoxic T cell density. Which of the following best explains the potential mechanism linking microbial histidine catabolism to immune suppression and poor cancer outcomes?",
+      "options": {
+        "A": "Microbial histidine catabolism produces butyrate, which directly inhibits CD8+ T cell activation in the tumor microenvironment",
+        "B": "Bacterial degradation of histidine reduces circulating and local histidine availability; since metastatic CRC patients already have depleted serum histidine and histidine catabolic enzyme expression in tumor tissue correlates with poor survival, microbial histidine degradation may compound substrate depletion and interfere with immune cell function",
+        "C": "The histidine degradation pathway generates lipopolysaccharide that activates TLR4 on tumor cells, promoting immune evasion through PD-L1 upregulation",
+        "D": "Histidine degradation products directly methylate tumor suppressor gene promoters, epigenetically silencing immune recognition pathways in cancer cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Patients with metastatic CRC already have low circulating histidine, and high expression of histidine catabolic enzymes in CRC tissue is associated with poor survival. Microbial degradation of histidine in the gut could further deplete an already scarce substrate. Since histidine is an essential amino acid for immune cell function, and the L-histidine degradation pathway inversely correlates with CD8+ cytotoxic T cell density in the tumor epithelium, it is hypothesized that microbial histidine catabolism contributes to immune suppression. However, this mechanism requires experimental validation.",
+      "topic_tags": ["L-histidine degradation", "CD8 T cells", "tumor immunity", "histidine", "colorectal cancer", "microbial metabolism"]
+    }
+  ]
+}
