@@ -57,7 +57,8 @@ class AppConfig:
     # "llm_local"    → uses your Ollama model to score chunks
     # "llm_api"      → uses Gemini or Groq API to score chunks
     # ----------------------------------------
-    RERANKER_TYPE: str = os.getenv("RERANKER_TYPE", "llm_local")
+    # RERANKER_TYPE: str = os.getenv("RERANKER_TYPE", "none")
+    RERANKER_TYPE: str = os.getenv("RERANKER_TYPE", "cross_encoder")
 
     # Used when RERANKER_TYPE=llm_api
     # Options: "gemini" | "groq"

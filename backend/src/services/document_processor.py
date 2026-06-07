@@ -68,14 +68,6 @@ class DocumentProcessor:
             finally:
                 os.unlink(tmp_path)
 
-        # Create / update vector store
-        # if all_documents:
-        #     Chroma.from_documents(
-        #         documents=all_documents,
-        #         embedding=self.embedding_model,
-        #         client=self.chroma_client,
-        #         collection_name=collection_name,
-        #     )
         if all_documents:
             collection = self.chroma_client.get_or_create_collection(collection_name)
             texts = [doc.page_content for doc in all_documents]
