@@ -152,7 +152,7 @@ Detailed documentation is available in the `docs/` directory.
 
 | Document | Description |
 |-----------|-------------|
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture, retrieval workflows, service design, and deployment architecture |
+| [Architecture.md](docs/Architecture.md) | System architecture, retrieval workflows, service design, and deployment architecture |
 | [API.md](docs/API.md) | REST API reference, request/response formats, and endpoint documentation |
 | [EVALUATION.md](docs/EVALUATION.md) | Evaluation methodology, RAGAS metrics, and benchmark design |
 | [EVAL_DATASET.md](docs/EVAL_DATASET.md) | Dataset generation workflow and benchmark structure |
